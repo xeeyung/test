@@ -28,9 +28,9 @@
 
 typedef struct DataNode
 {
-	char*   cmd;
-	char*   desc;
-	struct  DataNode *next;
+char*   cmd;
+char*   desc;
+struct  DataNode *next;
 } DataNode;
 
 void main()
