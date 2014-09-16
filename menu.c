@@ -28,8 +28,8 @@
 
 typedef struct DataNode
 {
-char*   cmd;
-char*   desc;
+ char*   cmd;
+ char*   desc;
 struct  DataNode *next;
 } DataNode;
 
