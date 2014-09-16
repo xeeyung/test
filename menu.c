@@ -28,25 +28,25 @@
 
 typedef struct DataNode
 {
- char*   cmd;
- char*   desc;
-struct  DataNode *next;
+  char*   cmd;
+  char*   desc;
+  struct  DataNode *next;
 } DataNode;
 
 void main()
 {   
-	/*this is declaration of putMenuList*/
-	void putMenuList(DataNode *a);
-	/*this is declaration of putListOne*/
+  /*this is declaration of putMenuList*/
+  void putMenuList(DataNode *a);
+  /*this is declaration of putListOne*/
 	void putListOne(DataNode *b , DataNode *c);
-	static DataNode head[] =
-	{
+  static DataNode head[] =
+	 {
 		{"help","this is help cmd.",&head[1]},
 		{"search","this is search cmd.",&head[2]},
 		{"copy","this is copy cmd.",&head[3]},
 		{"version","menu progrram v2.0",NULL}
 	};
-	DataNode * p = head;
+  DataNode * p = head;
 	printf("menu list : \n");
 	putMenuList(p);
 	putListOne(p , head);   
