@@ -75,12 +75,12 @@ void putListOne(DataNode *b , DataNode *c)
 		{
       if(!strcmp(b->cmd , cmd))
 			{
-        printf("%s - %s\n", b->cmd, b->desc);
-        break;
+				printf("%s - %s\n", b->cmd, b->desc);
+				break;
 			}
-      b = b->next;
+			b = b->next;
 		}
-    if(b == NULL)
+		if(b == NULL)
 		{
       printf("This is a wrong cmd !\n ");
 		}
